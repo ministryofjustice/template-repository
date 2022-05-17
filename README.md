@@ -9,7 +9,7 @@ Use this template to [create a repository] with the default initial files for a 
 * A .gitignore file
 * A CODEOWNERS file
 * A dependabot.yml file
-* The MoJ Compliant Badge
+* The MoJ Compliant Badge (Public repositories only)
 
 Once you have created your repository, please:
 
@@ -22,6 +22,6 @@ Once you have created your repository, please:
 * Modify the Dependabot file to suit the [dependency manager](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#package-ecosystem) you plan to use and for [automated pull requests for package updates](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/enabling-and-disabling-dependabot-version-updates#enabling-dependabot-version-updates). Dependabot is enabled in the settings by default.
 * Modify the short description found on the right side of the README.md file.
 * Ensure as many of the [GitHub Standards](https://github.com/ministryofjustice/github-repository-standards) rules are maintained as possibly can.
-* Modify the MoJ Compliant Badge url using these [instructions](https://github.com/orgs/ministryofjustice/teams/operations-engineering/discussions).
+* Modify the MoJ Compliant Badge url using these [instructions](https://github.com/orgs/ministryofjustice/teams/operations-engineering/discussions). If the repository is internal or private then the badge can removed as it will not work. 
 
 [create a repository]: https://github.com/ministryofjustice/template-repository/generate
