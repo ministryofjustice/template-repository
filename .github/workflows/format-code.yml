@@ -1,4 +1,4 @@
-name: code-foramtter
+name: code-formatter
 
 on:
   pull_request:
