@@ -23,5 +23,6 @@ Once you have created your repository, please:
 * Modify the short description found on the right side of the README.md file.
 * Ensure as many of the [GitHub Standards](https://github.com/ministryofjustice/github-repository-standards) rules are maintained as possibly can.
 * Modify the MoJ Compliant Badge url using these [instructions](https://github.com/orgs/ministryofjustice/teams/operations-engineering/discussions). If the repository is internal or private then the badge can removed as it will not work. 
+* For a private repo with no GitHub Advanced Security license remove the .github/workflows/dependency-review.yml file.
 
 [create a repository]: https://github.com/ministryofjustice/template-repository/generate
