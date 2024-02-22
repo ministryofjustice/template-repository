@@ -12,8 +12,8 @@ The repository comes with the following preset files:
 - .gitignore
 - CODEOWNERS
 - dependabot.yml
-- GitHub Actions example file
-- Ministry of Justice Compliance Badge (Public repositories only)
+- GitHub Actions example files
+- Ministry of Justice Compliance Badge (public repositories only)
 
 ## Setup Instructions
 
@@ -61,4 +61,6 @@ To add an Outside Collaborator to the repository, follow the guidelines detailed
 
 Adapt the dependabot.yml file to match your project's [dependency manager](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#package-ecosystem) and to enable [automated pull requests for package updates](https://docs.github.com/en/code-security/supply-chain-security).
 
-If your repository is private with no GitHub Advanced Security license, remove the .github/workflows/dependency-review.yml file.
+### Dependency Review
+
+If your repository is private with no GitHub Advanced Security license, remove the `.github/workflows/dependency-review.yml` file.
