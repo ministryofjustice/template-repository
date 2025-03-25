@@ -1,13 +1,9 @@
----
 name: Dependency Review
 
 on:
   pull_request:
-    types:
-      - edited
-      - opened
-      - reopened
-      - synchronize
+    branches:
+      - main
 
 permissions: {}
 
