@@ -1,0 +1,9 @@
+---
+version: 1.0.0
+name: apm
+targets:
+  - copilot
+  - vscode
+dependencies:
+  apm:
+    - ministryofjustice/ai-toolkit/toolkits/universal#main

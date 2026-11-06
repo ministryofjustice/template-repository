@@ -1,0 +1,21 @@
+---
+name: CodeQL
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+permissions: {}
+
+jobs:
+  codeql:
+    name: CodeQL
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    uses: ministryofjustice/actions/.github/workflows/codeql.yml@268fe78f569988fe89ddf87982618fa7840d0bf1 # v1.0.2

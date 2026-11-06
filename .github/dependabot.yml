@@ -1,37 +1,50 @@
 ---
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
-# https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
-
 version: 2
 
 updates:
-  - package-ecosystem: "bundler"
+  - package-ecosystem: "apm"
+    commit-message:
+      include: "scope"
+      prefix: ":dependabot: apm"
+    cooldown:
+      default-days: 7
+      exclude:
+        - "ministryofjustice/*"
     directory: "/"
+    open-pull-requests-limit: 15
     schedule:
       interval: "daily"
-  - package-ecosystem: "terraform"
-    directory: "/terraform"
+  - package-ecosystem: "devcontainers"
+    commit-message:
+      include: "scope"
+      prefix: ":dependabot: devcontainers"
+    cooldown:
+      default-days: 7
+      exclude:
+        - "ghcr.io/ministryofjustice/*"
+    directory: "/"
+    open-pull-requests-limit: 15
     schedule:
       interval: "daily"
   - package-ecosystem: "github-actions"
+    commit-message:
+      include: "scope"
+      prefix: ":dependabot: github-actions"
+    cooldown:
+      default-days: 7
+      exclude:
+        - "ministryofjustice/*"
     directory: "/"
+    open-pull-requests-limit: 15
     schedule:
       interval: "daily"
-  - package-ecosystem: "pip"
+  - package-ecosystem: "pre-commit"
+    commit-message:
+      include: "scope"
+      prefix: ":dependabot: pre-commit"
+    cooldown:
+      default-days: 7
     directory: "/"
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "gomod"
-    directory: "/"
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "docker"
-    directory: "/"
+    open-pull-requests-limit: 15
     schedule:
       interval: "daily"
